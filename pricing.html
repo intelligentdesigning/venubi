@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelle & Preise – Webspace</title>
+    <title>Leistungen | Venubi</title>
     <meta name="description"
-        content="Zwei einfache Modelle: einmalige Webseite oder Webseite mit Hosting und Wartung. Faire Angebote auf Anfrage, ohne versteckte Kosten.">
-    <meta name="keywords" content="Webseite Preis, Website erstellen Kosten, Webdesign Preise, KMU Website">
-    <meta name="author" content="Webspace">
+        content="Was Venubi liefert: ein CRM für Kunden, Anfragen, Termine und Aufträge, konfiguriert auf eure Abläufe. Angebot nach dem Kennenlerngespräch.">
+    <meta name="keywords" content="CRM Leistungen, CRM Einrichtung, CRM Anpassung, Unternehmenssoftware kleine Betriebe">
+    <meta name="author" content="Venubi">
 
     <!-- Favicon -->
     <link rel="icon" href="./logo.svg" type="image/svg+xml">
@@ -19,7 +19,7 @@
 <body>
     <script>
         // Apply the saved theme before paint so it doesn't flash dark on navigation
-        if (localStorage.getItem('webspace-theme') === 'light') {
+        if (localStorage.getItem('venubi-theme') === 'light') {
             document.body.classList.add('theme-light');
         }
     </script>
@@ -44,10 +44,10 @@
                                 </feMerge>
                             </filter>
                         </defs>
-                        <path class="logo-path" d="M8,10 L15,30 L20,15 L25,30 L32,10" fill="none" stroke="#fff"
+                        <path class="logo-path" d="M10,9 L20,31 L30,9" fill="none" stroke="#fff"
                             stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#logo-glow)" />
                     </svg>
-                    Webspace
+                    Venubi
                 </a>
 
                 <button class="header__mobile-toggle" aria-label="Menü öffnen" aria-expanded="false">
@@ -57,7 +57,7 @@
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li><a href="/" class="header__nav-link">Home</a></li>
-                        <li><a href="/pricing.html" class="header__nav-link active">Modelle</a></li>
+                        <li><a href="/pricing.html" class="header__nav-link active">Leistungen</a></li>
                         <li><a href="/about.html" class="header__nav-link">Über uns</a></li>
                         <li><a href="/contact.html" class="header__nav-link">Kontakt</a></li>
                     </ul>
@@ -70,7 +70,7 @@
                             </svg></span>
                     </button>
 
-                    <a href="/contact.html" class="btn btn--primary btn--sm">Anfrage starten</a>
+                    <a href="/contact.html" class="btn btn--primary btn--sm">Kennenlerngespräch</a>
                 </nav>
             </div>
         </header>
@@ -81,56 +81,118 @@
             <!-- Page Header -->
             <section class="page-header">
                 <div class="container">
-                    <h1 class="page-header__title">Unsere <span class="text-gradient">Modelle</span></h1>
+                    <h1 class="page-header__title">Unsere <span class="text-gradient">Leistungen</span></h1>
                     <p class="page-header__subtitle">
-                        Jedes Projekt ist anders. Deshalb gibt's bei uns keine Preisschilder von der Stange.
-                        Sag uns, was du brauchst, und du bekommst ein faires, persönliches Angebot. Ehrlich kalkuliert, ohne versteckte Kosten.
+                        Venubi liefert kein Produkt von der Stange und auch keine Software, die bei null beginnt.
+                        Wir nutzen ein gemeinsames Grundsystem und konfigurieren es auf euren Betrieb.
+                        Das hält den Aufwand klein und macht angepasste Software für kleine Unternehmen bezahlbar.
                     </p>
                 </div>
             </section>
 
-            <!-- Pricing Section -->
+            <!-- Leistungen -->
             <section id="pricing" class="pricing" style="padding-top: var(--space-xl);">
                 <div class="container">
                     <div class="pricing__grid pricing__grid--duo">
 
-                        <!-- Plan 1: Webseite -->
-                        <div id="webseite" class="pricing-card" data-reveal>
+                        <!-- Das CRM -->
+                        <div id="crm" class="pricing-card" data-reveal>
                             <div class="pricing-card__header">
-                                <span class="pricing-card__label">One-Time</span>
-                                <h3 class="pricing-card__name">Webseite</h3>
-                                <div class="pricing-card__price pricing-card__price--quote">Auf Anfrage</div>
-                                <p class="pricing-card__description">Einmal gebaut. Sie gehört dir.</p>
+                                <span class="pricing-card__label">Grundlage</span>
+                                <h3 class="pricing-card__name">Das CRM</h3>
+                                <div class="pricing-card__price pricing-card__price--quote">Angebot nach Bedarfsklärung</div>
+                                <p class="pricing-card__description">Die tägliche Arbeitsfläche für euer Team.</p>
                             </div>
                             <ul class="pricing-card__features">
-                                <li>Individuelles Design, kein Baukasten</li>
-                                <li>Für Handy &amp; Desktop gemacht</li>
-                                <li>Bei Google auffindbar</li>
-                                <li>Die fertige Seite gehört dir</li>
+                                <li>Kunden und Kontakte an einer Stelle</li>
+                                <li>Anfragen mit Status und Verlauf</li>
+                                <li>Termine und Aufträge mit Zuständigkeit</li>
+                                <li>Notizen, die für alle sichtbar sind</li>
+                                <li>Auswertungen zu offenen und erledigten Vorgängen</li>
+                                <li>Zugriff über den Browser, auch am Handy</li>
                             </ul>
-                            <a href="/contact.html" class="btn btn--outline pricing-card__cta">Anfrage starten</a>
+                            <a href="/contact.html" class="btn btn--outline pricing-card__cta">Kennenlerngespräch buchen</a>
                         </div>
 
-                        <!-- Plan 2: Webseite + Hosting -->
-                        <div id="hosting" class="pricing-card pricing-card--featured" data-reveal
+                        <!-- Einrichtung -->
+                        <div id="einrichtung" class="pricing-card pricing-card--featured" data-reveal
                             data-reveal-delay="100">
-                            <div class="pricing-card__badge">Rundum sorglos</div>
+                            <div class="pricing-card__badge">Der eigentliche Unterschied</div>
                             <div class="pricing-card__header">
-                                <span class="pricing-card__label">One-Time + monatlich</span>
-                                <h3 class="pricing-card__name">Webseite + Hosting</h3>
-                                <div class="pricing-card__price pricing-card__price--quote">Auf Anfrage</div>
-                                <p class="pricing-card__description">Wir bauen und pflegen sie weiter.</p>
+                                <span class="pricing-card__label">Anpassung</span>
+                                <h3 class="pricing-card__name">Einrichtung</h3>
+                                <div class="pricing-card__price pricing-card__price--quote">Angebot nach Bedarfsklärung</div>
+                                <p class="pricing-card__description">Wir bauen das System um eure Abläufe herum.</p>
                             </div>
                             <ul class="pricing-card__features">
-                                <li>Alles aus „Webseite"</li>
-                                <li>Hosting &amp; Domain inklusive</li>
-                                <li>Wartung &amp; Sicherheits-Updates</li>
-                                <li>Änderungen &amp; Support, wenn du sie brauchst</li>
+                                <li>Eure Abläufe als Status und Schritte abgebildet</li>
+                                <li>Die Datenfelder, die ihr wirklich braucht</li>
+                                <li>Euer Logo und eure Farben</li>
+                                <li>Übernahme vorhandener Listen nach Absprache</li>
+                                <li>Gemeinsame Testphase vor der Einführung</li>
+                                <li>Einweisung der Personen, die täglich damit arbeiten</li>
                             </ul>
-                            <a href="/contact.html" class="btn btn--primary pricing-card__cta">Anfrage starten</a>
+                            <a href="/contact.html" class="btn btn--primary pricing-card__cta">Kennenlerngespräch buchen</a>
                         </div>
 
                     </div>
+                </div>
+            </section>
+
+            <!-- Optionale Bausteine -->
+            <section class="about-team">
+                <div class="container">
+                    <header class="section__header" data-reveal>
+                        <span class="section__label">Optional</span>
+                        <h2 class="section__title">Bausteine, die ihr dazunehmen könnt</h2>
+                        <p class="section__subtitle">
+                            Nichts davon ist Pflicht. Wir schalten nur das frei, was in eurem Alltag einen Unterschied macht.
+                        </p>
+                    </header>
+
+                    <div class="team-highlights" data-reveal data-reveal-delay="100">
+                        <div class="highlight-card">
+                            <div class="highlight-icon"><svg viewBox="0 0 48 48">
+                                    <path d="M24 8l3.5 9.5L37 21l-9.5 3.5L24 34l-3.5-9.5L11 21l9.5-3.5z" />
+                                    <path d="M36 32l1.8 4.8L42 38l-4.2 1.4L36 44l-1.8-4.6L30 38l4.2-1.2z" />
+                                </svg></div>
+                            <h3>KI Unterstützung</h3>
+                            <p>Zusammenfassungen langer Verläufe, Fragen zu euren Daten in normaler Sprache und Hilfe bei wiederkehrenden Aufgaben. Optional und abschaltbar.</p>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="highlight-icon"><svg viewBox="0 0 48 48">
+                                    <rect x="10" y="8" width="28" height="32" rx="3" />
+                                    <path d="M18 18h12M18 25h12M18 32h8" />
+                                </svg></div>
+                            <h3>Auswertungen nach Maß</h3>
+                            <p>Zusätzliche Übersichten auf eure Fragen zugeschnitten, etwa nach Standort, Mitarbeitenden oder Auftragsart.</p>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="highlight-icon"><svg viewBox="0 0 48 48">
+                                    <path d="M24 6l14 6v10c0 10-6 16-14 20-8-4-14-10-14-20V12z" />
+                                    <path d="M18 24l4 4 8-8" />
+                                </svg></div>
+                            <h3>Betrieb bei euch</h3>
+                            <p>Der Betrieb auf eurer eigenen Infrastruktur ist vorgesehen. Nach der Übergabe hat unser Team keinen dauerhaften Zugriff auf eure Daten.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Demo Hinweis -->
+            <section class="section-solution">
+                <div class="container">
+                    <header class="section__header" data-reveal>
+                        <span class="section__label">Ansehen</span>
+                        <h2 class="section__title">Beispielansichten zeigen wir im Gespräch</h2>
+                        <p class="section__subtitle">
+                            Wir führen euch live durch eine Demo. Wichtig vorab: Diese Demo enthält
+                            ausschließlich erfundene Beispieldaten und zeigt keine echten Kundendaten.
+                            So seht ihr den Aufbau, ohne dass Daten Dritter im Spiel sind.
+                        </p>
+                    </header>
                 </div>
             </section>
 
@@ -143,44 +205,85 @@
                     </header>
 
                     <div class="accordion">
-                        <!-- FAQ 1 -->
                         <div class="accordion__item" data-reveal>
-                            <button class="accordion__button">
-                                <span>Wie läuft das ab?</span>
-                                <span class="accordion__icon">+</span>
-                            </button>
-                            <div class="accordion__content">
-                                <p class="accordion__text">
-                                    Du schreibst kurz, was du brauchst. Wir klären die Details, ich baue, du gibst
-                                    Feedback. Kurz darauf ist deine Seite online.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 2 -->
-                        <div class="accordion__item" data-reveal data-reveal-delay="50">
-                            <button class="accordion__button">
-                                <span>Wem gehört die Website?</span>
-                                <span class="accordion__icon">+</span>
-                            </button>
-                            <div class="accordion__content">
-                                <p class="accordion__text">
-                                    Beim Plan „Webseite" gehört dir die fertige Seite, und du kannst sie hosten, wo du
-                                    willst. Beim Hosting-Plan übernehmen wir alles drumherum.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- FAQ 3 -->
-                        <div class="accordion__item" data-reveal data-reveal-delay="100">
                             <button class="accordion__button">
                                 <span>Was kostet das?</span>
                                 <span class="accordion__icon">+</span>
                             </button>
                             <div class="accordion__content">
                                 <p class="accordion__text">
-                                    Jedes Projekt ist anders. Nach einem kurzen Gespräch bekommst du ein festes
-                                    Angebot. Fair kalkuliert, ohne versteckte Kosten.
+                                    Feste Preise veröffentlichen wir bewusst nicht, weil der Aufwand stark vom Umfang abhängt.
+                                    Nach dem Kennenlerngespräch und der Bedarfsklärung bekommt ihr ein schriftliches Angebot,
+                                    das zu eurem tatsächlichen Umfang passt.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item" data-reveal data-reveal-delay="50">
+                            <button class="accordion__button">
+                                <span>Können wir das vorher testen?</span>
+                                <span class="accordion__icon">+</span>
+                            </button>
+                            <div class="accordion__content">
+                                <p class="accordion__text">
+                                    Ja, ein Testzeitraum ist vorgesehen. Dauer und Bedingungen stehen noch nicht fest
+                                    und legen wir gemeinsam im Gespräch verbindlich fest. Wir versprechen hier bewusst
+                                    nichts, was wir noch nicht festgelegt haben.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item" data-reveal data-reveal-delay="100">
+                            <button class="accordion__button">
+                                <span>Wo liegen unsere Daten?</span>
+                                <span class="accordion__icon">+</span>
+                            </button>
+                            <div class="accordion__content">
+                                <p class="accordion__text">
+                                    Der Betrieb auf eurer eigenen Infrastruktur ist vorgesehen. Nach der Übergabe hat unser
+                                    Team keinen dauerhaften Zugriff auf eure Daten. Wenn ihr Unterstützung braucht, holt ihr
+                                    uns gezielt dazu. Was genau wo läuft, halten wir im Angebot schriftlich fest.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item" data-reveal data-reveal-delay="150">
+                            <button class="accordion__button">
+                                <span>Was passiert bei den KI Funktionen mit unseren Daten?</span>
+                                <span class="accordion__icon">+</span>
+                            </button>
+                            <div class="accordion__content">
+                                <p class="accordion__text">
+                                    Die KI Funktionen sind optional. Externe Dienste binden wir nur nach ausdrücklicher
+                                    Absprache mit euch ein, und wir sagen euch vorher, welcher Anbieter welche Daten
+                                    verarbeitet. Ohne diese Absprache verlässt nichts euer System.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item" data-reveal data-reveal-delay="200">
+                            <button class="accordion__button">
+                                <span>Wie lange dauert die Einrichtung?</span>
+                                <span class="accordion__icon">+</span>
+                            </button>
+                            <div class="accordion__content">
+                                <p class="accordion__text">
+                                    Das hängt davon ab, wie viele Abläufe abgebildet werden und ob vorhandene Listen
+                                    übernommen werden sollen. Eine belastbare Einschätzung geben wir erst nach der
+                                    Bedarfsklärung, nicht vorher.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item" data-reveal data-reveal-delay="250">
+                            <button class="accordion__button">
+                                <span>Müssen wir unsere Arbeitsweise umstellen?</span>
+                                <span class="accordion__icon">+</span>
+                            </button>
+                            <div class="accordion__content">
+                                <p class="accordion__text">
+                                    Der Anspruch ist umgekehrt: Das System bildet ab, wie ihr arbeitet. Wenn uns im Gespräch
+                                    auffällt, dass ein Ablauf euch Zeit kostet, sagen wir das. Die Entscheidung bleibt bei euch.
                                 </p>
                             </div>
                         </div>
@@ -192,9 +295,9 @@
             <section class="section-cta">
                 <div class="container" data-reveal>
                     <div class="cta-box">
-                        <h2 class="cta-title">Welcher Plan passt zu dir?</h2>
-                        <p class="cta-subtitle">Schreib kurz, was du vorhast. Du bekommst ein ehrliches Angebot.</p>
-                        <a href="/contact.html" class="btn btn--primary btn--xl">Anfrage starten →</a>
+                        <h2 class="cta-title">Passt das zu eurem Betrieb?</h2>
+                        <p class="cta-subtitle">Erzählt uns im Kennenlerngespräch, wie ihr heute arbeitet. Danach wisst ihr, ob es sich lohnt.</p>
+                        <a href="/contact.html" class="btn btn--primary btn--xl">Kennenlerngespräch buchen →</a>
                     </div>
                 </div>
             </section>
@@ -205,25 +308,22 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__grid">
-                    <!-- Brand -->
                     <div class="footer__brand">
-                        <div class="footer__logo">Webspace</div>
+                        <div class="footer__logo">Venubi</div>
                         <p class="footer__tagline">
-                            Moderne Websites für lokale Unternehmen. Persönlich gemacht, deutschlandweit.
+                            Angepasste CRM Systeme für kleine Unternehmen. Persönlich eingerichtet, verständlich im Alltag.
                         </p>
                     </div>
 
-                    <!-- Leistungen -->
                     <div class="footer__column">
                         <h4>Leistungen</h4>
                         <ul class="footer__links">
-                            <li><a href="/pricing.html#webseite">Webseite</a></li>
-                            <li><a href="/pricing.html#hosting">Webseite + Hosting</a></li>
-                            <li><a href="/pricing.html">Alle Modelle</a></li>
+                            <li><a href="/pricing.html#crm">Das CRM</a></li>
+                            <li><a href="/pricing.html#einrichtung">Einrichtung</a></li>
+                            <li><a href="/pricing.html">Alle Leistungen</a></li>
                         </ul>
                     </div>
 
-                    <!-- Unternehmen -->
                     <div class="footer__column">
                         <h4>Unternehmen</h4>
                         <ul class="footer__links">
@@ -232,7 +332,6 @@
                         </ul>
                     </div>
 
-                    <!-- Rechtliches -->
                     <div class="footer__column">
                         <h4>Rechtliches</h4>
                         <ul class="footer__links">
@@ -244,7 +343,7 @@
 
                 <div class="footer__bottom">
                     <p class="footer__copyright">
-                        © 2026 Webspace. Alle Rechte vorbehalten.
+                        © 2026 Venubi. Alle Rechte vorbehalten.
                     </p>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 /**
- * Webspace - Main JavaScript
+ * Venubi - Main JavaScript
  * Shared functionality across all pages.
  */
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /**
  * Charging Loader Animation
- * Animates W logo fill and percent counter, then reveals page
+ * Animates V logo fill and percent counter, then reveals page
  */
 function initChargingLoader() {
     const loader = document.getElementById('charging-loader');
@@ -44,6 +44,14 @@ function initChargingLoader() {
     const percentEl = loader.querySelector('.percent-value');
     const statusEl = loader.querySelector('.loader-status');
     const wFill = loader.querySelector('.loader-w-fill');
+
+    // Measure the actual path so the fill always completes, whatever the logo shape is
+    let strokeLength = 142;
+    if (wFill && typeof wFill.getTotalLength === 'function') {
+        strokeLength = wFill.getTotalLength();
+        wFill.style.strokeDasharray = strokeLength;
+        wFill.style.strokeDashoffset = strokeLength;
+    }
 
     let percent = 0;
     const duration = 2500; // 2.5 seconds loading
@@ -60,9 +68,8 @@ function initChargingLoader() {
         // Update percent display
         if (percentEl) percentEl.textContent = percent;
 
-        // Update W stroke fill
+        // Update V stroke fill
         if (wFill) {
-            const strokeLength = 200;
             wFill.style.strokeDashoffset = strokeLength * (1 - eased);
         }
 
@@ -117,7 +124,7 @@ function initThemeExplosion(bgInstance) {
     novaFlash.id = 'nova-flash';
     document.body.appendChild(novaFlash);
 
-    const THEME_KEY = 'webspace-theme';
+    const THEME_KEY = 'venubi-theme';
     let isLight = localStorage.getItem(THEME_KEY) === 'light';
     let busy = false;
 
@@ -243,7 +250,7 @@ function initAccordion() {
 }
 
 /**
- * Contact Form — Web3Forms submission
+ * Contact Form, Web3Forms submission
  * Handles submit via fetch, shows loading / success / error states.
  * Drop your free access key into the hidden "access_key" field in contact.html.
  */
@@ -292,7 +299,7 @@ function initContactForm() {
 
             if (data.success) {
                 form.reset();
-                setStatus('Danke! Deine Anfrage ist angekommen – ich melde mich innerhalb von 24 Stunden.', 'success');
+                setStatus('Danke! Eure Anfrage ist angekommen. Wir melden uns mit Terminvorschlägen.', 'success');
             } else {
                 setStatus('Das hat leider nicht geklappt. Bitte versuch es gleich noch einmal.', 'error');
             }

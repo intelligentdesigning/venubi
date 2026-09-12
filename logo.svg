@@ -2,17 +2,17 @@
   <defs>
     <!-- Shimmer gradient for animation -->
     <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00d4ff">
-        <animate attributeName="stop-color" values="#00d4ff;#7b5cff;#00d4ff" dur="3s" repeatCount="indefinite"/>
+      <stop offset="0%" stop-color="#6E86FF">
+        <animate attributeName="stop-color" values="#6E86FF;#7B5BE0;#6E86FF" dur="4s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="50%" stop-color="#7b5cff">
-        <animate attributeName="stop-color" values="#7b5cff;#00ff88;#7b5cff" dur="3s" repeatCount="indefinite"/>
+      <stop offset="50%" stop-color="#A7B8FF">
+        <animate attributeName="stop-color" values="#A7B8FF;#6E86FF;#A7B8FF" dur="4s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" stop-color="#00d4ff">
-        <animate attributeName="stop-color" values="#00d4ff;#7b5cff;#00d4ff" dur="3s" repeatCount="indefinite"/>
+      <stop offset="100%" stop-color="#6E86FF">
+        <animate attributeName="stop-color" values="#6E86FF;#7B5BE0;#6E86FF" dur="4s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
-    
+
     <!-- Glow filter -->
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
@@ -21,70 +21,53 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    
+
     <!-- Shimmer sweep -->
     <linearGradient id="sweep" x1="-100%" y1="0%" x2="0%" y2="0%">
       <stop offset="0%" stop-color="rgba(255,255,255,0)"/>
       <stop offset="50%" stop-color="rgba(255,255,255,0.6)"/>
       <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
-      <animate attributeName="x1" values="-100%;200%" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0%;300%" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x1" values="-100%;200%" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;300%" dur="5s" repeatCount="indefinite"/>
     </linearGradient>
   </defs>
-  
-  <!-- W monogram made of continuous current arc -->
+
+  <!-- V monogram -->
   <g filter="url(#glow)">
-    <!-- Main W shape - continuous flowing line -->
-    <path 
-      d="M6 10 
-         Q8 25, 12 28 
-         Q14 22, 16 18
-         Q18 14, 20 12
-         Q22 14, 24 18
-         Q26 22, 28 28
-         Q32 25, 34 10"
-      stroke="url(#shimmer)" 
-      stroke-width="2.5" 
+    <!-- Main V shape -->
+    <path
+      d="M9 9 L20 31 L31 9"
+      stroke="url(#shimmer)"
+      stroke-width="3"
       stroke-linecap="round"
       stroke-linejoin="round"
       fill="none"
     />
-    
+
     <!-- Secondary arc for depth -->
-    <path 
-      d="M8 12 
-         Q10 22, 13 25 
-         Q15 20, 17 16
-         Q19 13, 20 12
-         Q21 13, 23 16
-         Q25 20, 27 25
-         Q30 22, 32 12"
-      stroke="url(#shimmer)" 
-      stroke-width="1" 
+    <path
+      d="M13 11 L20 25 L27 11"
+      stroke="url(#shimmer)"
+      stroke-width="1"
       stroke-linecap="round"
+      stroke-linejoin="round"
       opacity="0.4"
       fill="none"
     />
   </g>
-  
+
   <!-- Shimmer overlay -->
-  <path 
-    d="M6 10 Q8 25, 12 28 Q14 22, 16 18 Q18 14, 20 12 Q22 14, 24 18 Q26 22, 28 28 Q32 25, 34 10"
-    stroke="url(#sweep)" 
-    stroke-width="2.5" 
+  <path
+    d="M9 9 L20 31 L31 9"
+    stroke="url(#sweep)"
+    stroke-width="3"
     stroke-linecap="round"
+    stroke-linejoin="round"
     fill="none"
     opacity="0.5"
   />
-  
+
   <!-- Small spark dots -->
-  <circle cx="12" cy="28" r="1.5" fill="#00d4ff" opacity="0.8">
-    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="28" cy="28" r="1.5" fill="#7b5cff" opacity="0.8">
-    <animate attributeName="opacity" values="0.2;0.8;0.2" dur="1.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="20" cy="12" r="1" fill="#00ff88" opacity="0.6">
-    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="2s" repeatCount="indefinite"/>
-  </circle>
+  <circle cx="9" cy="9" r="1.2" fill="#A7B8FF" opacity="0.9"/>
+  <circle cx="31" cy="9" r="1.2" fill="#A7B8FF" opacity="0.9"/>
 </svg>

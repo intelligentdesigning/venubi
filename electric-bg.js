@@ -1,5 +1,5 @@
 /**
- * Webspace - Cosmic Background Engine
+ * Venubi - Cosmic Background Engine
  * Deep space starfield with parallax depth, drifting nebulae,
  * an orbiting solar system and occasional shooting stars.
  * Smooth, premium, restrained — not too many effects.
@@ -226,7 +226,7 @@ export class ElectricBackground {
         this.center = { x: this.width * 0.78, y: this.height * 0.28 };
         this.planets = [
             new Planet({ orbitX: 90, orbitY: 34, angle: 0.6, speed: 0.0042, size: 4, color: '#7FB0FF', glow: 'rgba(127,176,255,0.7)' }),
-            new Planet({ orbitX: 165, orbitY: 62, angle: 2.1, speed: 0.0026, size: 6, color: '#C75BE0', glow: 'rgba(199,91,224,0.7)' }),
+            new Planet({ orbitX: 165, orbitY: 62, angle: 2.1, speed: 0.0026, size: 6, color: '#7B5BE0', glow: 'rgba(123,91,224,0.7)' }),
             new Planet({ orbitX: 250, orbitY: 95, angle: 4.0, speed: 0.0016, size: 5, color: '#FF9E6B', glow: 'rgba(255,158,107,0.6)', ring: true }),
             new Planet({ orbitX: 330, orbitY: 124, angle: 5.4, speed: 0.0011, size: 3.5, color: '#8FE6C2', glow: 'rgba(120,220,180,0.6)' }),
         ];
@@ -234,7 +234,7 @@ export class ElectricBackground {
         // Lone bodies in the lower / side areas so the frame isn't empty away from the sun.
         // The big ringed planet is darkOnly — in light mode it looks too heavy.
         this.lonePlanets = [
-            { x: this.width * 0.13, y: this.height * 0.82, size: 26, color: '#9B7DFF', glow: 'rgba(138,108,255,0.55)', ring: true, moon: true, darkOnly: true },
+            { x: this.width * 0.13, y: this.height * 0.82, size: 26, color: '#9B7DFF', glow: 'rgba(110,134,255,0.55)', ring: true, moon: true, darkOnly: true },
             { x: this.width * 0.93, y: this.height * 0.66, size: 14, color: '#FF9E6B', glow: 'rgba(255,158,107,0.5)' },
             { x: this.width * 0.06, y: this.height * 0.45, size: 10, color: '#7FB0FF', glow: 'rgba(127,176,255,0.5)' },
         ];
@@ -514,8 +514,8 @@ export class ElectricBackground {
         const sun = ctx.createRadialGradient(cx, cy, 0, cx, cy, 70);
         if (light) {
             sun.addColorStop(0, 'rgba(255, 236, 205, 0.55)');
-            sun.addColorStop(0.4, 'rgba(199, 91, 224, 0.10)');
-            sun.addColorStop(1, 'rgba(199, 91, 224, 0)');
+            sun.addColorStop(0.4, 'rgba(123, 91, 224, 0.10)');
+            sun.addColorStop(1, 'rgba(123, 91, 224, 0)');
         } else {
             sun.addColorStop(0, 'rgba(255, 248, 230, 0.9)');
             sun.addColorStop(0.3, 'rgba(255, 210, 170, 0.35)');

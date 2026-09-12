@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt – Webspace</title>
+    <title>Kennenlerngespräch buchen | Venubi</title>
     <meta name="description"
-        content="Schreib uns! Wir melden uns innerhalb von 24 Stunden bei dir. Kostenlose Beratung für dein Webprojekt.">
-    <meta name="keywords" content="Webspace Kontakt, Webseite anfragen, Webdesign Deutschland">
-    <meta name="author" content="Webspace">
+        content="Bucht ein unverbindliches Kennenlerngespräch mit Venubi. Erzählt uns, wie ihr heute arbeitet, und wir klären gemeinsam, ob ein CRM bei euch etwas bringt.">
+    <meta name="keywords" content="Venubi Kontakt, Kennenlerngespräch CRM, CRM Beratung kleine Unternehmen">
+    <meta name="author" content="Venubi">
 
     <!-- Favicon -->
     <link rel="icon" href="./logo.svg" type="image/svg+xml">
@@ -19,7 +19,7 @@
 <body>
     <script>
         // Apply the saved theme before paint so it doesn't flash dark on navigation
-        if (localStorage.getItem('webspace-theme') === 'light') {
+        if (localStorage.getItem('venubi-theme') === 'light') {
             document.body.classList.add('theme-light');
         }
     </script>
@@ -44,10 +44,10 @@
                                 </feMerge>
                             </filter>
                         </defs>
-                        <path class="logo-path" d="M8,10 L15,30 L20,15 L25,30 L32,10" fill="none" stroke="#fff"
+                        <path class="logo-path" d="M10,9 L20,31 L30,9" fill="none" stroke="#fff"
                             stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#logo-glow)" />
                     </svg>
-                    Webspace
+                    Venubi
                 </a>
 
                 <button class="header__mobile-toggle" aria-label="Menü öffnen" aria-expanded="false">
@@ -57,7 +57,7 @@
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li><a href="/" class="header__nav-link">Home</a></li>
-                        <li><a href="/pricing.html" class="header__nav-link">Modelle</a></li>
+                        <li><a href="/pricing.html" class="header__nav-link">Leistungen</a></li>
                         <li><a href="/about.html" class="header__nav-link">Über uns</a></li>
                         <li><a href="/contact.html" class="header__nav-link active">Kontakt</a></li>
                     </ul>
@@ -70,7 +70,7 @@
                             </svg></span>
                     </button>
 
-                    <a href="#contact-form" class="btn btn--primary btn--sm">Anfrage starten</a>
+                    <a href="#contact-form" class="btn btn--primary btn--sm">Zum Formular</a>
                 </nav>
             </div>
         </header>
@@ -81,9 +81,10 @@
             <!-- Page Header -->
             <section class="page-header">
                 <div class="container">
-                    <h1 class="page-header__title"><span class="text-gradient">Kontakt</span></h1>
+                    <h1 class="page-header__title"><span class="text-gradient">Kennenlerngespräch</span> buchen</h1>
                     <p class="page-header__subtitle">
-                        Erzähl uns von deinem Projekt. Wir melden uns innerhalb von 24 Stunden bei dir.
+                        Schickt uns kurz eure Eckdaten. Wir melden uns mit Terminvorschlägen für ein
+                        unverbindliches Gespräch.
                     </p>
                 </div>
             </section>
@@ -95,34 +96,34 @@
 
                         <!-- Contact Info -->
                         <div class="contact__info" data-reveal>
-                            <h2 class="mb-lg">Lass uns sprechen</h2>
+                            <h2 class="mb-lg">Was euch erwartet</h2>
                             <p class="mb-xl" style="color: var(--color-text-muted);">
-                                Hast du Fragen zu unseren Paketen? Möchtest du ein unverbindliches Angebot?
-                                Oder einfach mehr über Webspace erfahren? Wir freuen uns auf deine Nachricht.
+                                Kein Verkaufsgespräch. Ihr erzählt, wie ihr heute mit Kunden, Anfragen und Aufträgen
+                                umgeht. Wir sagen ehrlich, ob ein CRM bei euch etwas bringt und wie ein Vorgehen
+                                aussehen könnte.
                             </p>
 
                             <div class="contact__info-item">
                                 <span class="contact__info-icon"><svg width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                                        <circle cx="12" cy="12" r="9" />
+                                        <path d="M12 7v5l3 2" />
                                     </svg></span>
                                 <div>
-                                    <strong>Schnelle Antwort</strong>
-                                    <p style="color: var(--color-text-muted);">Antwort innerhalb von 24 Stunden</p>
+                                    <strong>Unverbindlich</strong>
+                                    <p style="color: var(--color-text-muted);">Das Gespräch kostet nichts und verpflichtet zu nichts.</p>
                                 </div>
                             </div>
 
                             <div class="contact__info-item">
                                 <span class="contact__info-icon"><svg width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <circle cx="12" cy="12" r="10" />
-                                        <path
-                                            d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                        <path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" />
+                                        <path d="M8 13h8M8 17h5" />
                                     </svg></span>
                                 <div>
-                                    <strong>Deutschlandweit</strong>
-                                    <p style="color: var(--color-text-muted);">Wir arbeiten remote mit Kunden in ganz
-                                        Deutschland</p>
+                                    <strong>Ohne Vorbereitung</strong>
+                                    <p style="color: var(--color-text-muted);">Ihr müsst nichts zusammenstellen. Erzählen reicht.</p>
                                 </div>
                             </div>
 
@@ -134,24 +135,23 @@
                                         <circle cx="12" cy="16" r="1" />
                                     </svg></span>
                                 <div>
-                                    <strong>Kostenlose Beratung</strong>
-                                    <p style="color: var(--color-text-muted);">Unverbindliche Erstberatung ohne Kosten
-                                    </p>
+                                    <strong>Eure Daten</strong>
+                                    <p style="color: var(--color-text-muted);">Wir nutzen eure Angaben nur, um euch auf dieses Gespräch zu antworten.</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Contact Form -->
                         <div class="contact__form-wrapper" data-reveal data-reveal-delay="100"
-                            style="background: var(--color-bg-card); border: 1px solid rgba(255,255,255,0.05); border-radius: var(--radius-lg); padding: var(--space-xl);">
-                            <h3 class="mb-lg">Projekt anfragen</h3>
+                            style="background: var(--color-bg-card); border: 1px solid rgba(255,255,255,0.05); border-radius: var(--radius-lg); padding: clamp(1.25rem, 5vw, 2.5rem);">
+                            <h3 class="mb-lg">Gespräch anfragen</h3>
                             <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit"
                                 method="POST">
-                                <!-- Web3Forms Zugangsschlüssel (Anfragen gehen an deinwebspace@gmail.com) -->
+                                <!-- Web3Forms Zugangsschluessel -->
                                 <input type="hidden" name="access_key" value="db65e9f3-60a2-435c-a6a0-f029af1604df">
-                                <input type="hidden" name="subject" value="Neue Projektanfrage über webspace.de">
-                                <input type="hidden" name="from_name" value="Webspace Website">
-                                <!-- Honeypot gegen Spam-Bots (für Menschen unsichtbar) -->
+                                <input type="hidden" name="subject" value="Neue Anfrage für ein Kennenlerngespräch über venubi.de">
+                                <input type="hidden" name="from_name" value="Venubi Website">
+                                <!-- Honeypot gegen Spam Bots (für Menschen unsichtbar) -->
                                 <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"
                                     style="display:none !important">
                                 <div class="form-group">
@@ -160,8 +160,8 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="email">E-Mail *</label>
-                                    <input type="email" id="email" name="email" placeholder="deine@email.de" required>
+                                    <label for="email">Mailadresse *</label>
+                                    <input type="email" id="email" name="email" placeholder="name@firma.de" required>
                                 </div>
 
                                 <div class="form-group">
@@ -170,24 +170,30 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="package">Welcher Plan?</label>
-                                    <select id="package" name="package">
+                                    <label for="phone">Telefon (optional)</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Für einen Rückruf">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="teamsize">Wie viele Personen würden damit arbeiten?</label>
+                                    <select id="teamsize" name="teamsize">
                                         <option value="">Bitte auswählen...</option>
-                                        <option value="webseite">Webseite (einmalig)</option>
-                                        <option value="webseite-hosting">Webseite + Hosting</option>
-                                        <option value="unsure">Bin noch unsicher</option>
+                                        <option value="1-3">1 bis 3</option>
+                                        <option value="4-10">4 bis 10</option>
+                                        <option value="11-25">11 bis 25</option>
+                                        <option value="25+">Mehr als 25</option>
+                                        <option value="unklar">Weiß ich noch nicht</option>
                                     </select>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="message">Projektbeschreibung *</label>
+                                    <label for="message">Wie arbeitet ihr heute? *</label>
                                     <textarea id="message" name="message"
-                                        placeholder="Erzähl uns von deinem Projekt: Was für eine Webseite brauchst du? Wer ist deine Zielgruppe? Gibt es Beispielseiten, die dir gefallen?"
+                                        placeholder="Womit verwaltet ihr Kunden, Anfragen und Aufträge im Moment? Wo geht am ehesten etwas verloren? Ein paar Sätze reichen völlig."
                                         required></textarea>
                                 </div>
 
-                                <button type="submit" class="btn btn--primary" style="width: 100%;">Anfrage
-                                    absenden</button>
+                                <button type="submit" class="btn btn--primary" style="width: 100%;">Kennenlerngespräch anfragen</button>
                                 <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
                             </form>
                         </div>
@@ -200,11 +206,12 @@
             <section style="padding: var(--space-3xl) 0; text-align: center;">
                 <div class="container" data-reveal>
                     <h2 class="section__title mb-md">So geht es weiter</h2>
-                    <p class="section__subtitle mb-lg" style="max-width: 600px; margin-left: auto; margin-right: auto;">
-                        Nach deiner Anfrage melden wir uns innerhalb von 24 Stunden mit einem unverbindlichen Angebot
-                        oder Fragen zu deinem Projekt. Keine versteckten Kosten, keine Verpflichtungen.
+                    <p class="section__subtitle mb-lg" style="max-width: 640px; margin-left: auto; margin-right: auto;">
+                        Nach eurer Anfrage melden wir uns mit Terminvorschlägen. Im Gespräch klären wir euren Bedarf.
+                        Ein Angebot bekommt ihr erst danach, wenn wir wissen, worum es tatsächlich geht.
+                        Feste Preise nennen wir vorher bewusst nicht.
                     </p>
-                    <a href="/pricing.html" class="btn btn--secondary btn--lg">Unsere Modelle ansehen</a>
+                    <a href="/pricing.html" class="btn btn--secondary btn--lg">Leistungen ansehen</a>
                 </div>
             </section>
 
@@ -215,18 +222,18 @@
             <div class="container">
                 <div class="footer__grid">
                     <div class="footer__brand">
-                        <div class="footer__logo">Webspace</div>
+                        <div class="footer__logo">Venubi</div>
                         <p class="footer__tagline">
-                            Moderne Websites für lokale Unternehmen. Persönlich gemacht, deutschlandweit.
+                            Angepasste CRM Systeme für kleine Unternehmen. Persönlich eingerichtet, verständlich im Alltag.
                         </p>
                     </div>
 
                     <div class="footer__column">
                         <h4>Leistungen</h4>
                         <ul class="footer__links">
-                            <li><a href="/pricing.html#webseite">Webseite</a></li>
-                            <li><a href="/pricing.html#hosting">Webseite + Hosting</a></li>
-                            <li><a href="/pricing.html">Alle Modelle</a></li>
+                            <li><a href="/pricing.html#crm">Das CRM</a></li>
+                            <li><a href="/pricing.html#einrichtung">Einrichtung</a></li>
+                            <li><a href="/pricing.html">Alle Leistungen</a></li>
                         </ul>
                     </div>
 
@@ -249,7 +256,7 @@
 
                 <div class="footer__bottom">
                     <p class="footer__copyright">
-                        © 2026 Webspace. Alle Rechte vorbehalten.
+                        © 2026 Venubi. Alle Rechte vorbehalten.
                     </p>
                 </div>
             </div>

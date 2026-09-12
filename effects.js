@@ -1,5 +1,5 @@
 /**
- * Webspace Effects - All UI Enhancement Phases
+ * Venubi Effects - All UI Enhancement Phases
  * Phase 1: Scroll Reveal
  * Phase 2: Button Effects (Magnetic, Ripple, 3D)
  * Phase 3: Hero Upgrades (Typing, Floating)
@@ -251,7 +251,7 @@ class LoadingStates {
         loader.innerHTML = `
       <div class="loader-content">
         <div class="loader-spinner"></div>
-        <div class="loader-text">Webspace</div>
+        <div class="loader-text">Venubi</div>
       </div>
     `;
         document.body.prepend(loader);
