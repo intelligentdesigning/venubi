@@ -3391,3 +3391,20 @@ body.theme-light .form-group select:focus {
 .hero-german > .container {
   min-width: 0;
 }
+
+/* Card grids: adapt columns to the actual number of cards so three cards
+   never sit left aligned in a four column track */
+.solutions-grid:has(> :nth-child(3):last-child),
+.team-highlights:has(> :nth-child(3):last-child) {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .solutions-grid:has(> :nth-child(3):last-child),
+  .team-highlights:has(> :nth-child(3):last-child) {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
