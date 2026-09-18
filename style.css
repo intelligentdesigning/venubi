@@ -3425,3 +3425,18 @@ body.theme-light .pricing-card__features li.is-excluded,
 body.theme-light .pricing-card__features li.is-excluded::before {
   color: var(--color-text-dim);
 }
+
+/* Pricing cards: calm, subtle lift instead of tilt plus scale */
+.pricing-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pricing-card:hover {
+    transform: none;
+  }
+}

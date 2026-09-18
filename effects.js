@@ -36,6 +36,12 @@ class ScrollReveal {
                 setTimeout(() => {
                     entry.target.style.opacity = '1';
                     entry.target.style.transform = 'translateY(0)';
+                    // Hand transform and transition back to the stylesheet once revealed,
+                    // otherwise these inline values block every CSS hover effect
+                    setTimeout(() => {
+                        entry.target.style.transform = '';
+                        entry.target.style.transition = '';
+                    }, 650);
                 }, delay);
                 this.observer.unobserve(entry.target);
             }
@@ -191,7 +197,7 @@ class HeroEffects {
 // ============================================
 class CardEffects {
     constructor() {
-        this.cards = document.querySelectorAll('.feature-card, .pricing-card, .testimonial-card');
+        this.cards = document.querySelectorAll('.feature-card, .testimonial-card');
         this.cards.forEach(card => {
             this.add3DTilt(card);
             this.addShimmer(card);
