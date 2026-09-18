@@ -3408,3 +3408,20 @@ body.theme-light .form-group select:focus {
     margin-right: auto;
   }
 }
+
+/* Excluded plan features: muted with a cross instead of a check */
+.pricing-card__features li.is-excluded {
+  color: var(--color-text-dim);
+}
+
+.pricing-card__features li.is-excluded::before {
+  content: '✕';
+  color: var(--color-text-dim);
+  text-shadow: none;
+  font-weight: 500;
+}
+
+body.theme-light .pricing-card__features li.is-excluded,
+body.theme-light .pricing-card__features li.is-excluded::before {
+  color: var(--color-text-dim);
+}
